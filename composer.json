@@ -1,0 +1,23 @@
+{
+    "name": "whatspie/php-client",
+    "description": "Official Whatspie PHP Client",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tarikh",
+            "email": "agustia.tarikh150@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Whatspie\\": "src"
+        }
+    }
+}
