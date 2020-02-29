@@ -1,5 +1,5 @@
 ## Official Whatspie client for PHP
-
+[![CircleCI](https://circleci.com/gh/tarikhagustia/whatspie-php-client.svg?style=shield)](https://circleci.com/gh/circleci/circleci-docs)
 ### Installation
 ```
 composer require whatspie\php-client
