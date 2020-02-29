@@ -14,8 +14,6 @@ final class ClientTest extends TestCase
 
     public function testCanSendingMessage()
     {
-
-
         $this->assertTrue($this->client->to('6285603051722')->message("Hi there this is from unit testing\n*This is Bold message*")->send());
     }
 

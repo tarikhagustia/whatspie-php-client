@@ -40,6 +40,7 @@ class Client
     public function send()
     {
         $request = $this->httpClient->post('/api/messages', [
+            RequestOptions::HEADERS => ['Accept' => 'application/json',  'Authorization' => "Bearer {$this->apiToken}"],
             RequestOptions::JSON => [
                 'receiver' => $this->to,
                 'device' => $this->device,
