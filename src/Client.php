@@ -12,6 +12,7 @@ class Client
     private $httpClient;
     private $message;
     private $to;
+    private $type = 'chat';
 
     public function __construct($apiToken, $device)
     {
@@ -44,7 +45,8 @@ class Client
             RequestOptions::JSON => [
                 'receiver' => $this->to,
                 'device' => $this->device,
-                'message' => $this->message
+                'message' => $this->message,
+                'type' => $this->type
             ],
             RequestOptions::HTTP_ERRORS => false,
         ]);
